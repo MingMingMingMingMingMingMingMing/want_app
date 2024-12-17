@@ -15,6 +15,7 @@ class WishlistItem {
     required this.status,
   });
 
+  // Map으로 변환 (toMap)
   Map<String, dynamic> toMap() {
     return {
       'id': id,
@@ -26,6 +27,7 @@ class WishlistItem {
     };
   }
 
+  // Map에서 객체로 변환 (fromMap)
   factory WishlistItem.fromMap(Map<String, dynamic> map) {
     return WishlistItem(
       id: map['id'],
@@ -36,4 +38,4 @@ class WishlistItem {
       status: map['status'],
     );
   }
-} 
+}
